@@ -6,18 +6,9 @@ namespace WebApiExample.Controllers
 	[Route("[controller]")]
 	public class WeatherForecastController : ControllerBase
 	{
-		[HttpGet("/name")]
-		public string GetData()
-		{
-			
-
-			string name = "arun";
-
-			return name;
-		}
-
-		[HttpGet("/student")]
-        public Student StudentData()
+		
+		[HttpGet]
+        public Student GetStudentData()
         {
             Student student = new Student()
             {
